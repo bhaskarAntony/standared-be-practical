@@ -9,7 +9,7 @@
 /* Styling for the custom carousel and indicators */
 .custom-carousel {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     padding: 20px;
