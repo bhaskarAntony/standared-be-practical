@@ -1,0 +1,156 @@
+:root{
+    --blue-color:#6440fb;
+    --green-color:#00ff84;
+    --black-color:#000;
+    --white-color:#fff;
+    --gray-color:#878787;
+}
+
+/* Styling for the custom carousel and indicators */
+.custom-carousel {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .custom-indicators {
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc; /* Inactive indicator color */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .indicator.active {
+    background-color: var(--green-color); /* Active indicator color */
+  }
+  .carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none !important;
+  }
+
+.home{
+    min-height: 100vh;
+    background: url(https://educrat-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbg.86c9aca0.png&w=1920&q=75) no-repeat center;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+/* carousal-box design  */
+
+.carousal-text{
+    color: #fff;
+}
+.carousal-heading{
+    font-size: 3.5rem;
+}
+.carousel-footer{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.carousel-footer button{
+    border: none;
+    padding: 15px;
+    width: 60%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.join-btn, .register-btn button{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: 2px solid transparent;
+}
+.book-btn{
+    border: 2px solid var(--green-color) !important;
+    background: transparent;
+    color: var(--green-color);
+}
+.book-btn:hover{
+    background: var(--green-color);
+    color: var(--black-color);
+}
+.join-btn:hover{
+    border: 2px solid var(--blue-color) !important;
+    background: transparent;
+    color: var(--blue-color);
+}
+
+ /* carosel text media querry  */
+  @media (max-width:528px){
+    .carousal-heading{
+        font-size: 2.5rem;
+    }
+    .carousel-footer{
+        flex-direction: column;
+    }
+    .carousel-footer button{
+        min-width: 100%;
+    }
+  }
+
+
+  /* home-right-image  */
+.home-right img{
+    width: 100%;
+}  
+
+/* wave-conatiner  */
+.register-container-home{
+    margin-bottom: -100px;
+    box-shadow: 0px 10px 10px #c8c7c7;
+    overflow: hidden;
+    border-radius: 10px !important;
+    padding: 20px;
+    background: var(--white-color);
+    padding-bottom: 20px;
+}
+.register-container-home .form-control{
+    padding: 15px;
+    border: 1px solid var(--gray-color) !important;
+}
+.card-header-text{
+    color: var(--blue-color);
+    margin-bottom: 20px;
+}
+.register-btn{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.register-btn button{
+    padding: 13px;
+    margin-top: 28px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+}
+
+
+/* course banner text  */
+.banner{
+    margin-top: 100px;
+}
+.banner-mini-text{
+    color: var(--blue-color);
+}
+.banner-big-text{
+    color: var(--black-color);
+}
