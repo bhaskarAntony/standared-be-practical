@@ -95,6 +95,9 @@
     background: transparent;
     color: var(--blue-color);
 }
+.register-btn button{
+    padding: 15px !important;
+}
 
  /* carosel text media querry  */
   @media (max-width:528px){
@@ -107,6 +110,17 @@
     .carousel-footer button{
         min-width: 100%;
     }
+    .full-screen-tabs .nav-item{
+        margin-bottom: 0 !important;
+        width: 100%;
+    }
+    .full-screen-tabs .nav{
+        background-color: var(--blue-light-color);
+    }
+    .full-screen-tabs .nav-link.active {
+        background-color: var(--blue-dark-color)!important; /* Change to your desired background color */
+        color: var(--white-color)!important; /* Change to your desired text color */
+      }
   }
 
 
@@ -139,7 +153,7 @@
     height: 100%;
 }
 .register-btn button{
-    padding: 13px;
+    padding: 13px !important;
     margin-top: 28px;
     width: 100%;
     border-radius: 5px;
