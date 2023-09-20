@@ -68,9 +68,9 @@
 }
 .carousel-footer button{
     border: none;
-    padding: 15px;
+    padding: 5px;
     width: 60%;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border-radius: 10px;
     transition: 0.5s;
 
@@ -173,16 +173,16 @@
     justify-content: center;
     background: var(--white-color);
   }
-.nav-item{
+.full-screen-tabs .nav-item{
     min-width: 200px;
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
 }
-.nav-link{
+.full-screen-tabs .nav-link{
     font-size: 1.3rem !important;
 }
-.nav-link.active {
+.full-screen-tabs .nav-link.active {
     background-color: var(--blue-light-color)!important; /* Change to your desired background color */
     color: var(--blue-color)!important; /* Change to your desired text color */
   }

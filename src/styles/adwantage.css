@@ -1,17 +1,17 @@
 :root{
     --blue-color:#6440fb;
     --blue-light-color:#6540fb21;
+    --blue-dark-color:#0a0229;
     --green-color:#00ff84;
-    --green-light-color: #00ff8442;
     --black-color:#000;
     --white-color:#fff;
     --gray-color:#878787;
 }
 .adwantage-card{
-    background-color: var(--blue-light-color);
+    background-color: var(--blue-dark-color);
     text-align: center;
-    min-height: 350px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     margin-bottom: 20px;
     border-radius: 20px 20px 0 0;
     position: relative;
@@ -20,10 +20,10 @@
 }
 .adwantage-card-body{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    height:200px;
+    height:250px;
+    background-color: var(--white-color);
     padding: 20px;
-    background-color: var(--blue-color);
-    color: var(--white-color);
+    color: var(--blue-dark-color);
     border-radius: 20px 20px 0 0;
     transition: 1s;
     display: flex;
@@ -41,6 +41,6 @@
     background-color: var(--green-light-color);
     cursor: pointer;
 }
-.adwantage-card h3{
-    font-weight: 600;
+.adwantage-card p{
+   color: var(--black-color);
 }
