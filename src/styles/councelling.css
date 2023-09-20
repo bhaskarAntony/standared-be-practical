@@ -44,23 +44,7 @@ overflow: hidden;
 background-color: transparent;
 border: none;
 }
-/* .pcard::after{
-content: "Step 1";
-position: absolute;
-top: -10px;
-right: -10px;
-width: 100px;
-height: 100px;
-font-size: 1.2em;
-border-radius: 100px;
-background-color: #302f2fb7;
-color: #fff;
-z-index: 2;
-/* border: 5px solid #fff; */
-/*display: flex;
-align-items: center;
-justify-content: center;
-} */
+
 .pcard::before{
 content: "";
 position: absolute;
@@ -207,3 +191,9 @@ color: #4b4b4b;
         }
         
       }
+      .join-btn, .register-btn button{
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        border: 2px solid transparent;
+        padding: 15px !important;
+    }

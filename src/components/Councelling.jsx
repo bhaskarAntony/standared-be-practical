@@ -36,10 +36,6 @@ function Councelling() {
   return (
    <div className="councelling-container-black">
      <section className="container-fluid councellingmain">
-        <div className="text-container  text-center">
-            <h3 className='councelling-header fs-1'>Training process and deployment</h3>
-            {/* <p className='mt-4'>The training process in software development involves identifying and addressing knowledge gaps among individuals or teams. It includes structured learning activities, hands-on practice, and assessments to enhance skills and keep up with industry advancements.</p> */}
-        </div>
       <div className="card-container">
         <div className="grid">
           <div className="card card-first border-0 rounded-5 pcard" data-aos="zoom-in-down" style={cardStyles.cardFirst}>

@@ -5,6 +5,7 @@ import TabContent from 'react-bootstrap/TabContent';
 import AllCourses from './AllCourses';
 import TrendingCourses from './TrendingCourses';
 import Councelling from './Councelling';
+import Adwantage from './Adwantage';
 
 function Home() {
     const [index, setIndex] = useState(0);
@@ -58,9 +59,9 @@ function Home() {
             <div className="carousel-body">
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
-            <div className="carousel-footer">
-                <button className='join-btn'>Join For Free</button>
-                <button className='book-btn'>Book Your Free Master Classes</button>
+           <div className="carousel-footer">
+                <button className='join-btn p-3'>Join For Free</button>
+                <button className='book-btn p-3'>Book Your Free Master Classes</button>
             </div>
            </div>
            
@@ -74,8 +75,8 @@ function Home() {
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-                <button className='join-btn'>Join For Free</button>
-                <button className='book-btn'>Book Your Free Master Classes</button>
+                <button className='join-btn p-3'>Join For Free</button>
+                <button className='book-btn p-3'>Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>
@@ -88,8 +89,8 @@ function Home() {
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-                <button className='join-btn'>Join For Free</button>
-                <button className='book-btn'>Book Your Free Master Classes</button>
+                <button className='join-btn p-3'>Join For Free</button>
+                <button className='book-btn p-3'>Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>
@@ -234,8 +235,8 @@ function Home() {
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-3">
                     <div className="training-card">
-                        <div className="training-card-header">
-                            <img src="" alt="" />
+                        <div className="training-card-header text-center mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5361/5361774.png" alt="" />
                         </div>
                         <div className="training-card-body">
                             <h3>Classroom training</h3>
@@ -248,8 +249,8 @@ function Home() {
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                     <div className="training-card">
-                        <div className="training-card-header">
-                            <img src="" alt="" />
+                    <div className="training-card-header text-center mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3214/3214781.png" alt="" />
                         </div>
                         <div className="training-card-body">
                             <h3>Online Training</h3>
@@ -262,8 +263,8 @@ function Home() {
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                     <div className="training-card">
-                        <div className="training-card-header">
-                            <img src="" alt="" />
+                    <div className="training-card-header text-center mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2103/2103862.png" alt="" />
                         </div>
                         <div className="training-card-body">
                             <h3>Corporate Training</h3>
@@ -276,8 +277,8 @@ function Home() {
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                     <div className="training-card">
-                        <div className="training-card-header">
-                            <img src="" alt="" />
+                    <div className="training-card-header text-center mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4365/4365377.png" alt="" />
                         </div>
                         <div className="training-card-body">
                             <h3>Hybrid Training</h3>
@@ -296,6 +297,11 @@ function Home() {
             <h2 className="banner-big-text">Training process and deployment</h2>
         </div>
         <Councelling/>
+        <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">Adwantage</h3>
+            <h2 className="banner-big-text">TRAINING ADVANTAGE @BE-PRACTICAL</h2>
+        </div>
+        <Adwantage/>
         
        </>
   )
