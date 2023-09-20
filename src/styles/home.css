@@ -1,5 +1,6 @@
 :root{
     --blue-color:#6440fb;
+    --blue-light-color:#6540fb21;
     --green-color:#00ff84;
     --black-color:#000;
     --white-color:#fff;
@@ -155,3 +156,33 @@
 .banner-big-text{
     color: var(--black-color);
 }
+
+/* course tabs  */
+.full-screen-tabs {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    background-color: var(--white-color); /* Background color for the full-screen container */
+    box-sizing: border-box;
+  }
+  .full-screen-tabs .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-color);
+  }
+.nav-item{
+    min-width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-link{
+    font-size: 1.3rem !important;
+}
+.nav-link.active {
+    background-color: var(--blue-light-color)!important; /* Change to your desired background color */
+    color: var(--blue-color)!important; /* Change to your desired text color */
+  }
+  
+  

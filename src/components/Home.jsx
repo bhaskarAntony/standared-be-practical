@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { Carousel } from 'react-bootstrap';
 import '../styles/home.css'
+import TabContent from 'react-bootstrap/TabContent';
+import AllCourses from './AllCourses';
+import TrendingCourses from './TrendingCourses';
 
 function Home() {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
+    const [key, setKey] = useState('tab1'); // Initialize with the active tab key
+
+    const [activeTab, setActiveTab] = useState('tab1'); // Initialize with the active tab key
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
   
     const handleSelect = (selectedIndex) => {
       setIndex(selectedIndex);
@@ -157,6 +167,68 @@ function Home() {
             <h3 className="banner-mini-text">Courses</h3>
             <h2 className="banner-big-text">Your Choice Our Courses lore</h2>
         </div>
+        <div className="full-screen-tabs">
+      <div className="container-fluid">
+      <ul className="nav nav-tabs custom-tabs">
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === 'tab1' ? 'active' : ''}`}
+            onClick={() => handleTabClick('tab1')}
+          >
+            <i class="bi bi-border-all"></i> All
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === 'tab2' ? 'active' : ''}`}
+            onClick={() => handleTabClick('tab2')}
+          >
+            <i class="bi bi-fire"></i> Trending Courses
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === 'tab3' ? 'active' : ''}`}
+            onClick={() => handleTabClick('tab3')}
+          >
+            Our Courses
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === 'tab4' ? 'active' : ''}`}
+            onClick={() => handleTabClick('tab4')}
+          >
+           Start Learning
+          </a>
+        </li>
+      </ul>
+      <div className="tab-content">
+        {/* Content for each tab */}
+        {activeTab === 'tab1' && <div>
+            <AllCourses/>
+            </div>}
+        {activeTab === 'tab2' && 
+        <div>
+            <TrendingCourses/>
+            
+        </div>}
+        {activeTab === 'tab3' &&
+         <div>
+            <AllCourses/>
+        </div>}
+        {activeTab === 'tab4' && 
+        <div>
+            This is the content for Tab 4
+        </div>}
+      </div>
+    </div>
+    </div>
+    <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">Training</h3>
+            <h2 className="banner-big-text">Mode Of Training</h2>
+        </div>
+        
        </>
   )
 }
