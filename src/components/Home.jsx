@@ -4,6 +4,7 @@ import '../styles/home.css'
 import TabContent from 'react-bootstrap/TabContent';
 import AllCourses from './AllCourses';
 import TrendingCourses from './TrendingCourses';
+import Councelling from './Councelling';
 
 function Home() {
     const [index, setIndex] = useState(0);
@@ -228,6 +229,73 @@ function Home() {
             <h3 className="banner-mini-text">Training</h3>
             <h2 className="banner-big-text">Mode Of Training</h2>
         </div>
+
+        <div className="training container-fluid">
+            <div className="row">
+                <div className="col-12 col-md-6 col-lg-3">
+                    <div className="training-card">
+                        <div className="training-card-header">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="training-card-body">
+                            <h3>Classroom training</h3>
+                            <p className="mt-3">In-house training / classroom training is livelier with our excellent infrastructure and modern facilities and face to face interaction with our trainers.</p>
+                        </div>
+                        <div className="training-card-footer">
+                            <button className="bg-white rounded-0 fs-5 w-100 p-1 border-0">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                    <div className="training-card">
+                        <div className="training-card-header">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="training-card-body">
+                            <h3>Online Training</h3>
+                            <p className="mt-3">Online training lets you compete your training from any place in the world. Learn your desired course while sitting in your home</p>
+                        </div>
+                        <div className="training-card-footer">
+                            <button className="bg-white rounded-0 fs-5 w-100 p-1 border-0">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                    <div className="training-card">
+                        <div className="training-card-header">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="training-card-body">
+                            <h3>Corporate Training</h3>
+                            <p className="mt-3">Our trainers provide corporate training, so you can stay up to date with the latest developments in your field.</p>
+                        </div>
+                        <div className="training-card-footer">
+                            <button className="bg-white rounded-0 fs-5 w-100 p-1 border-0">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                    <div className="training-card">
+                        <div className="training-card-header">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="training-card-body">
+                            <h3>Hybrid Training</h3>
+                            <p className="mt-3">We provide hybrid classes, where students can attend classes online or offline. It is great for students with a busy schedule.</p>
+                        </div>
+                        <div className="training-card-footer">
+                            <button className="bg-white rounded-0 fs-5 w-100 p-1 border-0">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">Councelling</h3>
+            <h2 className="banner-big-text">Training process and deployment</h2>
+        </div>
+        <Councelling/>
         
        </>
   )

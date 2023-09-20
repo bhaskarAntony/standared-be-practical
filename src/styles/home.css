@@ -1,6 +1,7 @@
 :root{
     --blue-color:#6440fb;
     --blue-light-color:#6540fb21;
+    --blue-dark-color:#0a0229;
     --green-color:#00ff84;
     --black-color:#000;
     --white-color:#fff;
@@ -183,6 +184,27 @@
 .nav-link.active {
     background-color: var(--blue-light-color)!important; /* Change to your desired background color */
     color: var(--blue-color)!important; /* Change to your desired text color */
+  }
+
+  /* training section  */
+  .training-card-body{
+    min-height: 200px;
+  }
+  .training-card{
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .training .training-card:nth-child(odd){
+    background: var(--blue-dark-color) !important;
+    color: var(--white-color);
+  }
+  /* .training .training-card:nth-child(odd){
+    background: var(--green-color) !important;
+  } */
+  .training-card-footer button{
+    border-radius: 100px !important;
+    padding: 15px !important;
   }
   
   
