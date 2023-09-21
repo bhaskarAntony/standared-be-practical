@@ -24,6 +24,11 @@
 .course-heading h1{
     font-size: 3.5rem;
 }
+@media (max-width:528px){
+    .course-heading h1{
+        font-size: 2.8rem;
+    }
+}
 .course-description{
     color: var(--blue-light-color);
 }
