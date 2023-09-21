@@ -8,13 +8,10 @@
     --gray-color:#878787;
 }
 .container-black{
-    /* background-image: linear-gradient(45deg, #100521,#100521, #100521); */
-    background: linear-gradient(#140342b7, #140342b6), url('../images/circle-scatter-haikei.svg') no-repeat center;
-    background-size: cover;
     background-color: var(--blue-dark-color);
     padding: 3%;
     position: relative;
-    animation: anim-bg 0.5s linear infinite;
+    animation: anim-bg 4s linear infinite;
 }
 @keyframes anim-bg{
     0%{
@@ -25,6 +22,7 @@
 }
 .elite-section{
     min-height: 50vh;
+    max-height: fit-content;
     padding: 1%;
     background-color: transparent;
     position: relative;
@@ -34,6 +32,10 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
+}
+.elite-section .right{
+    height: fit-content;
+    padding: 20px 10px;
 }
 .elite-text{
     z-index: 4;

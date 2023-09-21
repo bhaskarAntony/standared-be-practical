@@ -8,6 +8,60 @@ import Councelling from './Councelling';
 import Adwantage from './Adwantage';
 import Testinomials from './Testinomials';
 import Elite from './Elite';
+import Feedback from './Feedback';
+import Skills from './Skills';
+
+const items = [
+  {
+    id: 1,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  {
+    id: 2,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  {
+    id: 1,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  {
+    id: 1,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  {
+    id: 1,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  {
+    id: 1,
+    name: 'Slide 1',
+    rating: 5,
+    feedback:
+      "Be-practical is one of the best platforms for all non-technical and technical background students. I did MBA in 2017, and I'm learning lots of things at the institute. I like the faculty, and I feel that I had the very best platform for my career. I learned many new things from my teachers who were very helpful in every way they could. Teachers' and students' interaction was good, and they are very friendly, which helped me clarify many of my doubts in the course. I appreciate the faculty for their quick response and great support, and very special thanks to HR Kavitha Mam; she is very kind, and I am always thankful for her support and guidance. Thank you.",
+    profile: 'https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg',
+  },
+  // Add more items as needed
+];
 
 function Home() {
     const [index, setIndex] = useState(0);
@@ -159,21 +213,29 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-2 col-lg-2 register-btn">
-              <button>Join Now</button>
+            <div className="col-12 col-sm-12 col-md-2 col-lg-2 register-btn carousel-footer">
+              <button className='join-btn p-3 mt-4'>Join Now</button>
             </div>
           </div>
           </div>
         </div>
         </div>
        </section>
-       <div className="banner p-3 text-center">
+       <div className="banner p-3 text-center margin-banner">
+            <h3 className="banner-mini-text">Offer</h3>
+            <h2 className="banner-big-text">We Offering Elite Batch For You...</h2>
+        </div>
+        <Elite/>
+
+      
+       <div className="banner p-3 text-center ">
             <h3 className="banner-mini-text">Courses</h3>
             <h2 className="banner-big-text">Your Choice Our Courses lore</h2>
         </div>
         <div className="full-screen-tabs">
       <div className="container-fluid">
-      <ul className="nav nav-tabs custom-tabs">
+     <div className="main-nav">
+     <ul className="nav nav-tabs custom-tabs">
         <li className="nav-item">
           <a
             className={`nav-link ${activeTab === 'tab1' ? 'active' : ''}`}
@@ -207,6 +269,8 @@ function Home() {
           </a>
         </li>
       </ul>
+      <button className='apply-btn'>Apply Now</button>
+     </div>
       <div className="tab-content">
         {/* Content for each tab */}
         {activeTab === 'tab1' && <div>
@@ -228,11 +292,60 @@ function Home() {
       </div>
     </div>
     </div>
-    <div className="banner p-3 text-center">
-            <h3 className="banner-mini-text">Offer</h3>
-            <h2 className="banner-big-text">We Offering Elite Batch For You...</h2>
+    
+
+        <div className="course-join-cards container-fluid p-4">
+       <div className="row">
+        <div className="col-12 col-md-6 col-lg-3">
+         <div className="join-card">
+         <div className="row join-card-inner">
+            <div className="col-6">
+              <h5>BECOME A FULLSTACK DEVOLOPER</h5>
+            </div>
+            <div className="col-6">
+             <button className="Know">Know More</button>
+            </div>
+          </div>
+         </div>
         </div>
-        <Elite/>
+        <div className="col-12 col-md-6 col-lg-3">
+         <div className="join-card">
+         <div className="row join-card-inner">
+            <div className="col-6">
+              <h5>BECOME A CLOUT ARCHITECT</h5>
+            </div>
+            <div className="col-6">
+             <button className="Know">Know More</button>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <div className="join-card">
+          <div className="row join-card-inner">
+            <div className="col-6">
+              <h5>BECOME A DATA SCIENTIST</h5>
+            </div>
+            <div className="col-6">
+             <button className="Know">Know More</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <div className="join-card">
+          <div className="row join-card-inner">
+            <div className="col-6">
+              <h5>BECOME A DEVOPS ENGINEER</h5>
+            </div>
+            <div className="col-6">
+             <button className="Know">Know More</button>
+            </div>
+          </div>
+          </div>
+        </div>
+       </div>
+       </div>
 
     <div className="banner p-3 text-center">
             <h3 className="banner-mini-text">Training</h3>
@@ -242,7 +355,7 @@ function Home() {
         <div className="training container-fluid overflow-hidden">
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-3">
-                    <div className="training-card">
+                    <div className="training-card training-card1">
                         <div className="training-card-header text-center mb-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/5361/5361774.png" alt="" />
                         </div>
@@ -256,7 +369,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
-                    <div className="training-card">
+                    <div className="training-card training-card2">
                     <div className="training-card-header text-center mb-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/3214/3214781.png" alt="" />
                         </div>
@@ -270,7 +383,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
-                    <div className="training-card">
+                    <div className="training-card training-card3">
                     <div className="training-card-header text-center mb-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/2103/2103862.png" alt="" />
                         </div>
@@ -284,7 +397,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
-                    <div className="training-card">
+                    <div className="training-card training-card4">
                     <div className="training-card-header text-center mb-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/4365/4365377.png" alt="" />
                         </div>
@@ -299,6 +412,8 @@ function Home() {
                 </div>
             </div>
         </div>
+
+        
 
         <div className="banner p-3 text-center">
             <h3 className="banner-mini-text">Councelling</h3>
@@ -315,13 +430,14 @@ function Home() {
             <h2 className="banner-big-text">Meet Our Students</h2>
         </div>
        <div className="bg-light container-fluid overflow-hidden">
-        <Testinomials/>
+       <Feedback/>
        </div>
 
        <div className="banner p-3 text-center">
             <h3 className="banner-mini-text">@Be Practical</h3>
             <h2 className="banner-big-text">Why You Choose Us?</h2>
         </div>
+        <Skills/>
         
        </div>
   )

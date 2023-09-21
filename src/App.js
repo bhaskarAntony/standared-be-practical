@@ -19,7 +19,7 @@ function App() {
       <Route path='/Python-fullstack' element={<Python/>}></Route>
     </Routes>
     </BrowserRouter>
-          <Footer/>
+          {/* <Footer/> */}
     </div>
   )
 }

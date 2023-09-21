@@ -10,7 +10,7 @@
 .navbar{
     z-index: 10;
     font-weight: 600;
-    background-color: var(--blue-dark-color);
+    background-color: var(--blue-color);
     box-shadow: 0px 0px 20px var(--black-color);
     position: sticky !important;
     top: 0 !important;
@@ -30,12 +30,14 @@
 }
 .navbar .nav-link{
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 300;
 }
 .navbar .nav-link:hover{
     background-color: transparent;
-    color: rgb(231, 196, 0) !important;
-    transition: 0.5s;
+    transform: scale(1.1);
+    color: var(--white-color);
+    transition: 0.2s;
 }
 .navbar-brand img{
     width: 220px;
@@ -64,6 +66,7 @@
     text-decoration: none;
     padding: 10px 20px;
     color: rgb(0, 0, 0);
+    font-weight: 300;
 }
 .dropdown ul li a:hover{
     background-color: #fff;
@@ -72,16 +75,28 @@
 .dropdown span{
     color: #070707;
     position: relative;
+    font-weight: 400;
 }
 .dropdown span::after{
     content: "";
     position: absolute;
     width: 80%;
-    height: 3px;
+    height: 2px;
     background: #191919;
     left: 0;
     bottom: -10px;
     border-radius: 10px;
+}
+.discuss-btn{
+    padding: 10px;
+    background-color: var(--blue-color);
+    color: var(--white-color) !important;
+}
+.discuss-btn:hover{
+    background-color: transparent !important;
+    color: var(--blue-color) !important;
+    border: 1px solid var(--blue-color) !important;
+    transition: 0.5s;
 }
 .divider-line {
     height: 1.2px;
@@ -100,6 +115,9 @@
     padding: 0 !important;
     margin-left: -25px;
 }
+.mynavbar .active{
+    color: #fff !important;
+}
 
 
 @media (max-width:528px){
@@ -117,7 +135,7 @@
         align-items:start !important;
     }
     .dropdown-menu{
-        min-width: 50vh !important;
+        min-width: 100%;
     }
     .navbar .dropdown-menu {
         left: 0;
@@ -133,14 +151,11 @@
     min-height: 100vh;
         justify-content: flex-start;
     }
-    .mynavbar .nav-item{
+    /* .mynavbar .nav-item{
         margin-top: 20px;
-    }
-    .mynavbar .nav-link:active{
+    } */
+    .mynavbar .active{
         color: #fff !important;
-    }
-    .dropdown-menu{
-        min-width: 60vh !important;
     }
 }
 
@@ -152,6 +167,8 @@
     justify-content: flex-end;
 }
 .top-header-contact{
+    padding: 0 10px !important;
+    margin: 0;
     background-color: var(--blue-color);
     border-bottom: 1px solid #fff;
 }

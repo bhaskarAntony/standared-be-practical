@@ -24,6 +24,10 @@
 .course-heading h1{
     font-size: 3.5rem;
 }
+.course-heading .text-main{
+    color: var(--green-color);
+    font-weight: 600;
+}
 @media (max-width:528px){
     .course-heading h1{
         font-size: 2.8rem;
@@ -60,5 +64,15 @@
 .single-course-card img{
     width:100%;
     height:250px;
+    border-radius: 10px;
+}
+
+/* rating  */
+.stars-text{
+    display: flex;
+    gap: 10px;
+}
+.rating-text{
+    background: var(--blue-light-color);
     border-radius: 10px;
 }

@@ -29,7 +29,7 @@ function Mern() {
                <p className="tag-blue rounded-5 p-1 px-2 bg-primary">Popular</p>
             </div>
             <div className="course-heading">
-                <h1 className='text-white'>Complete <span className='text-primary'>MERN Fullstack</span> Devolopment Course</h1>
+                <h1 className='text-white'>Complete <span className='text-main'>MERN Fullstack</span> Devolopment Course</h1>
             </div>
             <p className="course-description text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi non quod.</p>
             <div className="row course-text-footer">
@@ -183,6 +183,46 @@ function Mern() {
         </div>
       </div>
       <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">Rating</h3>
+            <h2 className="banner-big-text">Student Ratings</h2>
+        </div>
+        <div className="ratings container-fluid">
+            <div className="container p-lg-5 p-md-3">
+            <div className="row">
+                <div className="col-3">
+                    <div className="rating-text">
+                        <h1>4.8</h1>
+                        <div className="stars-text">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        </div>
+                        <p>Course rating</p>
+                    </div>
+                </div>
+                <div className="col-9">
+                    <div className="rating-progress">
+                        <div className="form-group d-flex align-items-center g-2">
+                            <progress value="10" max="100">
+
+                            </progress>
+                            <div className="stars-progress d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                        </div>
+                        <p>70%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      <div className="banner p-3 text-center">
             <h3 className="banner-mini-text">Adwantage</h3>
             <h2 className="banner-big-text">Your Choice Our Courses lore</h2>
         </div>
@@ -192,6 +232,7 @@ function Mern() {
             <h2 className="banner-big-text">What Students Says About This Course?</h2>
         </div>
         <Testinomials/>
+
     </>
   )
 }

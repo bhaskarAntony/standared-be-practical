@@ -103,6 +103,27 @@
     padding: 15px !important;
 }
 
+.join-card{
+    padding: 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    display: flex;
+    align-items: center;
+}
+.join-card-inner{
+    display: flex;
+    align-items: center;
+    color: var(--black-color);
+
+}
+.join-card .Know{
+    border: none;
+    background-color: var(--blue-color);
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
  /* carosel text media querry  */
   @media (max-width:528px){
     .carousal-heading{
@@ -167,8 +188,8 @@
 
 
 /* course banner text  */
-.banner{
-    margin-top: 100px;
+.margin-banner{
+    margin-top: 100px !important;
 }
 .banner-mini-text{
     color: var(--blue-color);
@@ -185,27 +206,66 @@
     background-color: var(--white-color); /* Background color for the full-screen container */
     box-sizing: border-box;
   }
+  .main-nav{
+    display: flex;
+    min-width: 100% !important;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-top: 1px solid #c8c7c7;
+    padding:  5px 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
   .full-screen-tabs .nav{
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--white-color);
+    flex-flow: row nowrap;
+    overflow: auto;
+    border: none;
+
+  }
+  .apply-btn{
+    border: none;
+    padding: 8px 10px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    height: fit-content;
+    width: 150px;
   }
 .full-screen-tabs .nav-item{
-    min-width: 200px;
+    min-width: fit-content;
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
 }
+@media (max-width:768px){
+    .full-screen-tabs .nav-item{
+        width: fit-content;
+    }
+}
 .full-screen-tabs .nav-link{
     color: var(--blue-dark-color);
+    width: fit-content;
 }
 .full-screen-tabs .nav-link{
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
+}
+.full-screen-tabs .nav-link:hover{
+    background-color: transparent;
+    border: none; /* Change to your desired background color */
+    color: var(--blue-color)!important; /* Change to your desired text color */
+    border-bottom: 2px solid var(--blue-color) !important;
 }
 .full-screen-tabs .nav-link.active {
-    background-color: var(--blue-light-color)!important; /* Change to your desired background color */
-    color: var(--blue-dark-color)!important; /* Change to your desired text color */
+    background-color: transparent;
+    border: none; /* Change to your desired background color */
+    color: var(--blue-color)!important; /* Change to your desired text color */
+    border-bottom: 2px solid var(--blue-color) !important;
+    font-weight: 600;
   }
 
   /* training section  */
@@ -216,10 +276,26 @@
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
-  .training .training-card:nth-child(odd){
-    background: var(--blue-dark-color) !important;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     color: var(--white-color);
+
+  }
+  .training-card:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .training-card1{
+    background: linear-gradient(45deg, #D80032,  #5B0888)  !important;
+  }
+  .training-card2{
+    background: linear-gradient(45deg, #E55604,  #FF9B82)  !important;
+  }
+  .training-card3{
+    background: linear-gradient(45deg, #662549,  #BC7AF9)  !important;
+  }
+  .training-card4{
+    background: linear-gradient(45deg, #0733c2,  #713ABE)  !important;
   }
   /* .training .training-card:nth-child(odd){
     background: var(--green-color) !important;
@@ -227,6 +303,7 @@
   .training-card-footer button{
     border-radius: 100px !important;
     padding: 15px !important;
+    box-shadow: 0px 0px 2px 1px #858585;
   }
   
   

@@ -6,7 +6,7 @@ function Header() {
     
 return (
 <div class="">
-    <div className="container-fluid top-header-contact">
+    {/* <div className="container-fluid top-header-contact">
         <div className="row">
             <div className="col-12 col-md-4 col-lg-4">
                 <p className='text-white'><i class="bi bi-envelope-fill"></i> BePractical@gmail.com</p>
@@ -24,7 +24,7 @@ return (
             </div>
             </div>
         </div>
-    </div>
+    </div> */}
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="https://be-practical.com/images/Be-logo.png" alt="" /></a>
@@ -52,6 +52,7 @@ return (
                                             <li><a href="https://be-practical.com/python-fullstack/">MEAN FullStack</a></li>
                                             <li><a href="https://be-practical.com/java-fullstack-developer-course/">Java FullStack</a></li>
                                             <li><a href="https://be-practical.com/python-fullstack/">Python FullStack</a></li>
+                                            <li><a href="https://be-practical.com/python-fullstack/" className='discuss-btn'>Enroll</a></li>
                                             
                                         </ul>
                                     </div>
@@ -60,6 +61,7 @@ return (
                                         <ul className='p-0'>
                                             <li><a href="https://be-practical.com/advanced-cloud-computing-aws/">Adwance Cloud Computing</a></li>
                                             <li><a href="">DevOps</a></li>
+                                            <li><a href="https://be-practical.com/python-fullstack/" className='discuss-btn'>Enroll</a></li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-4 col-md-6">
@@ -69,10 +71,12 @@ return (
                                             <li><a href="https://be-practical.com/testing-training-institute-job-guaranteed/">Software testing</a></li>
                                             <li><a href="https://be-practical.com/data-science-course-in-bangalore">Digital Marketing</a></li>
                                             <li><a href="https://be-practical.com/job-guaranteed-courses-in-bangalore">Job garanteed Courses</a></li>
+                                            <li><a href="https://be-practical.com/python-fullstack/" className='discuss-btn'>Enroll</a></li>
                                             </ul>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </li>
 
@@ -85,13 +89,13 @@ return (
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-4 col-md-6">
-                                    <span className="fs-5">FullStack Devolopment</span>
+                                    <span className="fs-5"></span>
                                         <ul>
-                                            <li><a href="https://be-practical.com/mern-stack-development-training/">MERN FullStack</a></li>
+                                            <li><a href="https://be-practical.com/mern-stack-development-training/">Why Be Practical?</a></li>
                                             {/* <li><a href="">MERN FullStack</a></li> */}
                                             {/* <li><a href="">MEAN FullStack</a></li> */}
-                                            <li><a href="https://be-practical.com/java-fullstack-developer-course/">Java FullStack</a></li>
-                                            <li><a href="https://be-practical.com/python-fullstack/">Python FullStack</a></li>
+                                            <li><a href="https://be-practical.com/java-fullstack-developer-course/">Contact us</a></li>
+                                            <li><a href="https://be-practical.com/python-fullstack/" className='discuss-btn'>Lets Discuss</a></li>
                                         </ul>
                                     </div>
                                    
@@ -122,6 +126,7 @@ return (
                                             <li><a href="https://be-practical.com/java-fullstack-developer-course/https://be-practicalhr.com/corporate-training-in-bangalore/">Corporate Trainig</a></li>
                                             <li><a href="https://be-practical.com/java-fullstack-developer-course/https://be-practicalhr.com/">HR Services</a></li>
                                             <li><a href="https://be-practical.com/contact-us/">Hired Trained Graduates</a></li>
+                                            <li><a href="https://be-practical.com/python-fullstack/" className='discuss-btn'>Call to HR</a></li>
                                         </ul>
                                     </div>
                                    
