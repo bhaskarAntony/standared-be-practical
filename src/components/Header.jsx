@@ -6,6 +6,25 @@ function Header() {
     
 return (
 <div class="">
+    <div className="container-fluid top-header-contact">
+        <div className="row">
+            <div className="col-12 col-md-4 col-lg-4">
+                <p className='text-white'><i class="bi bi-envelope-fill"></i> BePractical@gmail.com</p>
+            </div>
+            <div className="col-12 col-md-4 col-lg-4">
+                <p className='text-white'><i class="bi bi-telephone-fill"></i> +91-000-0000-000</p>
+            </div>
+            <div className="col-12 col-md-4 col-lg-4">
+            <div className="social-icons text-white">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp"></i>
+            </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="https://be-practical.com/images/Be-logo.png" alt="" /></a>
@@ -114,7 +133,6 @@ return (
             </div>
         </div>
     </nav>
-    <div className="divider-line"></div>
 </div>
 );
 }

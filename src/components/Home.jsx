@@ -7,6 +7,7 @@ import TrendingCourses from './TrendingCourses';
 import Councelling from './Councelling';
 import Adwantage from './Adwantage';
 import Testinomials from './Testinomials';
+import Elite from './Elite';
 
 function Home() {
     const [index, setIndex] = useState(0);
@@ -228,11 +229,17 @@ function Home() {
     </div>
     </div>
     <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">Offer</h3>
+            <h2 className="banner-big-text">We Offering Elite Batch For You...</h2>
+        </div>
+        <Elite/>
+
+    <div className="banner p-3 text-center">
             <h3 className="banner-mini-text">Training</h3>
             <h2 className="banner-big-text">Mode Of Training</h2>
         </div>
 
-        <div className="training container-fluid">
+        <div className="training container-fluid overflow-hidden">
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-3">
                     <div className="training-card">
@@ -310,6 +317,11 @@ function Home() {
        <div className="bg-light container-fluid overflow-hidden">
         <Testinomials/>
        </div>
+
+       <div className="banner p-3 text-center">
+            <h3 className="banner-mini-text">@Be Practical</h3>
+            <h2 className="banner-big-text">Why You Choose Us?</h2>
+        </div>
         
        </>
   )

@@ -1,0 +1,51 @@
+:root{
+    --blue-color:#6440fb;
+    --blue-light-color:#6540fb21;
+    --blue-dark-color:#140342;
+    --green-color:#00ff84;
+    --black-color:#000;
+    --white-color:#fff;
+    --gray-color:#878787;
+}
+.tag-container{
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+.course-top{
+    min-height: 100vh;
+    background-color: var(--blue-dark-color);
+}
+.course-page-text{
+    padding: 20px;
+    padding-top: 10%;
+    min-height: 80vh;
+}
+.course-heading h1{
+    font-size: 3.5rem;
+}
+.course-description{
+    color: var(--blue-light-color);
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rating-text{
+    padding: 8px;
+    background-color: #ef7e1459;
+    color: #ef7e14;
+    border-radius: 10px;
+}
+.rating [class*="bi-"]{
+    color: #ef7e14;
+    font-size: 1.2rem;
+}
+.enrolled{
+    display: flex;
+    align-items: center !important;
+}
+.course-text-footer .bi-people-fill, .course-text-footer .bi-clock {
+    color: #ef7e14;
+}
