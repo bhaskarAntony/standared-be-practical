@@ -47,7 +47,7 @@ function Home() {
     const numberOfSlides = 3; // Replace with the actual number of slides
   
     return (
-        <>
+        <div className="main-home">
        <section className="home container-fluid">
         <div className="row">
             <div className="col-12 col-md-12 col-lg-6">
@@ -323,7 +323,7 @@ function Home() {
             <h2 className="banner-big-text">Why You Choose Us?</h2>
         </div>
         
-       </>
+       </div>
   )
 }
 

@@ -27,6 +27,7 @@
 }
 .course-card-header{
     background: var(--white-color);
+    position: relative;
 }
 .course-card-header img{
     width: 100%;
@@ -36,6 +37,28 @@
 .course-card-body{
     margin-top: -100px;
     padding: 10px;
+}
+.highlighter{
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-icons{
+    display: flex;
+    gap:20px;
+}
+.fav, .share{
+    background-color: var(--white-color);
+    padding:5px;
+    font-size: 1.3em;
+    border-radius: 100px;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 @media (max-width:998px){
     .course-card-header img{

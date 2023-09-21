@@ -9,7 +9,9 @@
 }
 .container-black{
     /* background-image: linear-gradient(45deg, #100521,#100521, #100521); */
-    background: var(--blue-dark-color);
+    background: linear-gradient(#140342b7, #140342b6), url('../images/circle-scatter-haikei.svg') no-repeat center;
+    background-size: cover;
+    background-color: var(--blue-dark-color);
     padding: 3%;
     position: relative;
     animation: anim-bg 0.5s linear infinite;

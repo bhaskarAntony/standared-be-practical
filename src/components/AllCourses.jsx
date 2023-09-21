@@ -5,6 +5,7 @@ import AOS from 'aos';
 var courses = [
     {
         name: "MERN Fullstack",
+        tag:"Trending",
         duration: "4.5 Months",
         trainer: "...",
         languages: ["html", "css", "Bootstrap", "Javascript", "React Js", "NodeJs", "Express JS", "MongoDB"],
@@ -13,6 +14,7 @@ var courses = [
     },
     {
         name: "Java Fullstack",
+        tag:"Trending",
         duration: "4.5 Months",
         trainer: "...",
         languages: ["html", "css", "Bootstrap", "Javascript", "React Js", "NodeJs", "Express JS", "MongoDB"],
@@ -49,19 +51,30 @@ function AllCourses() {
                       <div className="card course-card" data-aos="zoom-in">
                       <div className="course-card-header">
                           <img src={item.image} alt="" />
+                           <div className="highlighter p-2">
+                            <p className="p-1 px-3 text-white bg-primary rounded-5"><i class="bi bi-fire"></i>{item.tag}</p>
+                           <div className="course-icons">
+                             <div className="share">
+                             <i class="bi bi-share-fill"></i>
+                            </div>
+                            <div className="fav">
+                            <i class="bi bi-heart"></i>
+                            </div>
+                           </div>
+                          </div>
                       </div>
                       <div className="course-card-body">
                       <ul className="list-group">
-                                      <li className="list-group-item">
-                                          <strong>Course</strong>
+                                         <li className="list-group-item">
+                                          <strong className="text-primary"><i class="bi bi-laptop fs-4"></i> Course</strong>
                                           <p>{item.name}</p>
                                       </li>
                                       <li className="list-group-item">
-                                          <strong>Duration</strong>
+                                          <strong className="text-primary"><i class="bi bi-clock-history fs-4"></i> Duration</strong>
                                           <p>{item.duration}</p>
                                       </li>
                                       <li className="list-group-item">
-                                          <strong>Trainer</strong>
+                                          <strong className="text-primary"><i class="bi bi-person-workspace fs-4"></i> Trainer</strong>
                                           <p>{item.trainer}</p>
                                       </li>
                                       {/* <li className="list-group-item">

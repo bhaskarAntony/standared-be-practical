@@ -7,6 +7,10 @@
     --white-color:#fff;
     --gray-color:#878787;
 }
+.main-home{
+    
+    background-color: var(--white-color);
+}
 
 /* Styling for the custom carousel and indicators */
 .custom-carousel {
@@ -194,11 +198,14 @@
     cursor: pointer;
 }
 .full-screen-tabs .nav-link{
+    color: var(--blue-dark-color);
+}
+.full-screen-tabs .nav-link{
     font-size: 1.3rem !important;
 }
 .full-screen-tabs .nav-link.active {
     background-color: var(--blue-light-color)!important; /* Change to your desired background color */
-    color: var(--blue-color)!important; /* Change to your desired text color */
+    color: var(--blue-dark-color)!important; /* Change to your desired text color */
   }
 
   /* training section  */
